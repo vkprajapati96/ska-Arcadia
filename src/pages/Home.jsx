@@ -18,6 +18,7 @@ const galleryImages = [home, home, home, home, home, home];
 
 const Home = () => {
   const [openForm, setOpenForm] = useState(false);
+
   const plans = [
     {
       id: 1,
@@ -238,7 +239,7 @@ const Home = () => {
         </div>
 
         {/* 🔽 SCROLL INDICATOR (FULLY OUTSIDE TABLE) 🔽 */}
-        <div className="flex justify-center mt-6">
+        <div className="flex md:hidden justify-center mt-6">
           <div className="h-1 w-28 bg-gray-300 rounded-full overflow-hidden">
             <div className="h-1 w-12 bg-blue-900 animate-ping rounded-full"></div>
           </div>
@@ -435,23 +436,25 @@ const Home = () => {
 const Content = () => (
   <>
     <div className="bg-blue-900 text-white text-center py-2 font-semibold rounded">
-      Price has been revised 200 per Sq.Ft.
-    </div>
+SKA ARCADIA - SIGNATURE HIGH STREET    </div>
 
     <h1 className="text-3xl md:text-4xl font-bold text-center mt-4">
-      OMAXE STATE DWARKA
+      Premium Commercial Spaces{" "}
     </h1>
 
     <p className="text-center text-lg font-medium mt-1">
-      At Sector 19B, Dwarka, Delhi
+      At Wave City, NH-24, Ghaziabad
     </p>
 
     <ul className="mt-6 space-y-3 text-gray-700 text-[16px]">
-      <li>✔ 50.4 Acres Of Land</li>
-      <li>✔ 3 Side Road Approach</li>
-      <li>✔ 11 Entrances & 11 Car Drop-Offs</li>
-      <li>✔ A 5-In-1 Integrated Destination</li>
-      <li>✔ A Vision Executed By 24 World-Renowned Consultants</li>
+      <li className="font-semibold">✔ &nbsp; Retail Spaces</li>
+      <li className="font-semibold">✔ &nbsp; Food Courts</li>
+      <li className="font-semibold">✔ &nbsp; Office Spaces</li>
+      <li className="font-semibold"> ✔ &nbsp; Double-height ground shops</li>
+      <li className="font-semibold">
+        {" "}
+        ✔ &nbsp; 2-side open corner plot — maximum visibility.
+      </li>
     </ul>
 
     <div className="border border-blue-800 bg-blue-900 text-white text-center py-4 mt-6 rounded">
@@ -463,11 +466,11 @@ const Content = () => (
     </div>
 
     <p className="text-center mt-6 text-gray-700 text-lg font-medium">
-      Premium Retail Space Investment Starts From
+      Premium Commercial Space Investment Starts From
     </p>
 
     <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-900 mt-2">
-      ₹ 52 Lacs* Onwards
+      ₹ 50 Lacs* Onwards
     </h2>
 
     <div className="text-center mt-6">
