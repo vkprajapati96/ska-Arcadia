@@ -542,7 +542,7 @@ const Home = () => {
 const Content = () => (
   <>
     <div className="bg-blue-900 text-white text-center py-2 font-semibold rounded">
-      SKA ARCADIA - SIGNATURE HIGH STREET{" "}
+      MOVE - IN READY{" "}
     </div>
 
     <h1 className="text-3xl md:text-4xl font-bold text-center mt-4">
@@ -553,7 +553,7 @@ const Content = () => (
       At Wave City, NH-24, Ghaziabad
     </p>
 
-    <ul className="mt-6 flex flex-wrap justify-center gap-3 text-gray-700 text-[16px]">
+    <ul className="mt-14 mb-14 flex flex-wrap justify-center gap-3 text-gray-700 text-[16px]">
       <li className="text-center min-w-[120px] bg-blue-900 text-white rounded-lg px-3 py-2 font-semibold">
         Retail Spaces
       </li>
@@ -571,8 +571,8 @@ const Content = () => (
       <p className="font-semibold text-lg">
         12% Assured Return (Till Possession)
       </p>
-      <p className="font-semibold text-lg">7% Guaranteed Lease (After OC)</p>
-      <p className="text-sm mt-1">Payment plan - 50:50</p>
+      {/* <p className="font-semibold text-lg">7% Guaranteed Lease (After OC)</p> */}
+      <p className="text-sm mt-1">Payment plan - 40:60</p>
     </div>
 
     <p className="text-center mt-6 text-gray-700 text-lg font-medium">
