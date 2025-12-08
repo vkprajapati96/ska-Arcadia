@@ -32,7 +32,7 @@ const Footer = () => {
           <div className="w-full border-t mt-8 pt-4 text-gray-600 text-sm">
             All Rights Reserved. © 2025 SKA Arcadia | Created By  {" "}
             <a href="#" className="text-blue-700 hover:underline">
-              The Star soluton
+              The Star Solution
             </a>
           </div>
         </div>

@@ -27,7 +27,7 @@ export default function AutoPopupForm() {
           ×
         </button>
 
-        <h2 className="text-xl font-semibold mb-4 text-center">Enquiry Form</h2>
+        <h2 className="text-xl font-semibold mb-4 text-center">Get In Touch</h2>
 
         <form className="flex flex-col gap-3">
 

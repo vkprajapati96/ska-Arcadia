@@ -272,8 +272,8 @@ const Home = () => {
       <div className="w-full bg-white py-16 px-4 flex flex-col items-center relative overflow-hidden">
         {/* ANGLED BACKGROUND */}
 
-        <h2 className="text-3xl font-semibold text-teal-400 mb-12 relative z-10">
-          Price List
+        <h2 className="text-3xl font-bold  mb-12 relative z-10">
+          PRICE LIST
         </h2>
 
         <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-10 relative z-10">
@@ -283,7 +283,7 @@ const Home = () => {
               className="relative bg-white rounded-2xl shadow-xl p-8 flex flex-col items-center text-center border border-gray-200"
             >
               {/* TOP TAB */}
-              <div className="absolute -top-6 bg-teal-500 text-white px-8 py-2 rounded-lg text-sm font-semibold shadow-md">
+              <div className="absolute -top-6 bg-blue-500 text-white px-8 py-2 rounded-lg text-sm font-semibold shadow-md">
                 {item.title}
               </div>
 
@@ -299,7 +299,7 @@ const Home = () => {
                 <p className="font-semibold">{item.size}</p>
               </div>
 
-              <button className="mt-6 bg-teal-500 text-white px-6 py-2 rounded-md font-semibold hover:bg-teal-600 transition">
+              <button className="mt-6 bg-blue-500 text-white px-6 py-2 rounded-md font-semibold hover:bg-teal-600 transition">
                 Know More
               </button>
             </div>
@@ -390,7 +390,7 @@ const Home = () => {
                 <button
                   onClick={() => setOpenForm(true)}
                   className="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-                  bg-blue-900 text-white px-6 py-2 rounded-md font-semibold shadow"
+                  bg-blue-500 text-white px-6 py-2 rounded-md font-semibold shadow"
                 >
                   VIEW PLAN
                 </button>
