@@ -32,7 +32,7 @@ const Navbar = () => {
           href="tel:+917827613187"
           className="hidden lg:flex items-center gap-2 bg-blue-900 text-white py-3 px-5 rounded-md font-semibold"
         >
-          <FiPhone size={20} /> +91-7827 613 187
+          <FiPhone size={20} /> +91-836 860 4905
         </a>
 
         {/* Mobile Menu Icon */}

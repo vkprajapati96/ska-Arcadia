@@ -8,6 +8,9 @@ import { MdSecurity } from "react-icons/md";
 import { FaUsers } from "react-icons/fa";
 import { MdFireExtinguisher } from "react-icons/md";
 
+import { GoDotFill } from "react-icons/go";
+
+
 const data = [
   { icon: <FaHamburger />, title: "Food Courts" },
   { icon: <MdSecurity />, title: "24×7 Security & CCTV" },
@@ -92,7 +95,7 @@ const Home = () => {
           {/* ---------------- RIGHT FORM ---------------- */}
           <div className=" shadow-md p-6 md:p-8  h-full w-full order-3  md:mt-0">
             <h2 className="text-2xl md:text-3xl font-semibold text-center mb-6">
-              Get Instant Callback
+              Get In Touch
             </h2>
 
             <input
@@ -458,7 +461,7 @@ const Home = () => {
       <div className="w-full py-16 bg-white">
         {/* HEADING */}
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">
-          PROPERTY GALLERY
+           GALLERY
         </h2>
 
         {/* GRID */}
@@ -494,8 +497,9 @@ const Home = () => {
           {/* RIGHT FORM BOX EXACT SAME LOOK */}
           <div className="w-full md:w-[35%] bg-[#f8fafc]  p-8 shadow-lg">
             <h2 className="text-2xl font-semibold mb-6">
-              Get Instant Callback
-            </h2>
+              Get In Touch
+              
+          </h2>
 
             <form className="space-y-4">
               <input
@@ -553,7 +557,7 @@ const Content = () => (
       At Wave City, NH-24, Ghaziabad
     </p>
 
-    <ul className="mt-12 mb-12 flex flex-wrap justify-center gap-3 text-gray-700 text-[16px]">
+    <ul className="mt-8 mb-8 flex flex-wrap justify-center gap-3 text-gray-700 text-[16px]">
       <li className="text-center min-w-[120px] bg-blue-900 text-white rounded-lg px-3 py-2 font-semibold">
         Retail Spaces
       </li>
@@ -567,12 +571,26 @@ const Content = () => (
       </li>
     </ul>
 
-    <div className="border border-blue-800 bg-blue-900 text-white text-center py-4 mt-6 rounded">
+
+<div className="text-center mb-4 flex justify-around text-[18px]">
+  <p className="flex items-center gap-2">
+    <GoDotFill size={15} className="text-[10px]" />
+    RERA Approved
+  </p>
+
+  <p className="flex items-center gap-2">
+    <GoDotFill size={15} className="text-[10px]" />
+    Payment Plan 40:60
+  </p>
+</div>
+
+    <div className="border border-blue-800 bg-blue-900 text-white text-center py-2 mt-6 rounded">
+
       <p className="font-semibold text-lg">
-        12% Assured Return (Till Possession)
+
+        Contact Now +91 836 860 4905
       </p>
-      {/* <p className="font-semibold text-lg">7% Guaranteed Lease (After OC)</p> */}
-      <p className="text-sm mt-1">Payment plan - 40:60</p>
+
     </div>
 
     <p className="text-center mt-6 text-gray-700 text-lg font-medium">

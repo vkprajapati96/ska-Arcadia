@@ -17,7 +17,7 @@ const Footer = () => {
             UPRERAPRJ228610
           </p>
 
-          <p className="mt-4 text-gray-700 leading-relaxed">
+          <p className=" text-[15px] mt-4 text-gray-700 leading-relaxed">
             <span className="font-semibold">Disclaimer :</span> The content is for information purposes only and does not constitute an offer to avail of any service. Prices mentioned are subject to change without notice and properties mentioned are subject to availability. Images for representation purposes only. This website is belong to authorized marketing partner.
           </p>
 
@@ -30,7 +30,7 @@ const Footer = () => {
 
           {/* BOTTOM LINE */}
           <div className="w-full border-t mt-8 pt-4 text-gray-600 text-sm">
-            All Rights Reserved. © 2025 SKA Arcadia Created By | {" "}
+            All Rights Reserved. © 2025 SKA Arcadia | Created By  {" "}
             <a href="#" className="text-blue-700 hover:underline">
               The Star soluton
             </a>
