@@ -55,7 +55,7 @@ export default function AutoPopupForm() {
             className="border p-2 rounded-md"
           />
 
-          <button className="bg-teal-600 text-white p-2 rounded-md mt-2">
+          <button className="bg-blue-900 text-white p-2 rounded-md mt-2">
             Submit
           </button>
         </form>
