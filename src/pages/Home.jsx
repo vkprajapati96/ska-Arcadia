@@ -25,17 +25,17 @@ const cards = [
   {
     title: "Retail Shops",
     typology: "Retail shop",
-    size: "380 - 1879 Sq.Ft",
+    size: "64- 470 Sq.Ft",
   },
   {
     title: "Office Spaces",
     typology: "Office Space",
-    size: "380 - 1879 Sq.Ft",
+    size: "64- 470 Sq.Ft",
   },
   {
     title: "Food Courts",
     typology: "Food Court",
-    size: "380 - 1879 Sq.Ft",
+    size: "64- 470 Sq.Ft",
   },
 ];
 
