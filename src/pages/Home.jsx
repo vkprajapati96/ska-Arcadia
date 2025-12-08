@@ -553,7 +553,7 @@ const Content = () => (
       At Wave City, NH-24, Ghaziabad
     </p>
 
-    <ul className="mt-14 mb-14 flex flex-wrap justify-center gap-3 text-gray-700 text-[16px]">
+    <ul className="mt-12 mb-12 flex flex-wrap justify-center gap-3 text-gray-700 text-[16px]">
       <li className="text-center min-w-[120px] bg-blue-900 text-white rounded-lg px-3 py-2 font-semibold">
         Retail Spaces
       </li>
