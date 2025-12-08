@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FiPhone, FiMenu, FiX } from "react-icons/fi";
 import logo from "../../image/logo.jpg"
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -18,7 +19,7 @@ const Navbar = () => {
 
         {/* Desktop Links */}
         <ul className="hidden lg:flex items-center gap-8 text-[17px] font-medium">
-          <li><a href="#home" className="hover:text-blue-700">Home</a></li>
+          <li><Link to="/" className="hover:text-blue-700">Home</Link></li>
           <li><a href="#about" className="hover:text-blue-700">About Us</a></li>
           <li><a href="#amenities" className="hover:text-blue-700">Amenities</a></li>
           <li><a href="#floors" className="hover:text-blue-700">Floors Plan</a></li>

@@ -5,16 +5,36 @@ import { FaHamburger, FaParking, FaVideo, FaBolt } from "react-icons/fa";
 import { GiElevator } from "react-icons/gi";
 import { MdSecurity } from "react-icons/md";
 
+import { FaUsers } from "react-icons/fa";
+import { MdFireExtinguisher } from "react-icons/md";
+
 const data = [
-  { icon: <FaHamburger />, title: "Food court" },
-  { icon: <MdSecurity />, title: "Security service" },
-  { icon: <FaParking />, title: "3 Level parking" },
-  { icon: <GiElevator />, title: "Lifts & escalators" },
-  { icon: <FaVideo />, title: "Cctv surveillance" },
-  { icon: <FaBolt />, title: "Power backup" },
+  { icon: <FaHamburger />, title: "Food Courts" },
+  { icon: <MdSecurity />, title: "24×7 Security & CCTV" },
+  { icon: <FaParking />, title: "Parking Space" },
+  { icon: <MdFireExtinguisher />, title: "Fire Safety Systems" },
+  { icon: <FaUsers />, title: "High Footfall Location" },
+  { icon: <FaBolt />, title: "Power Backup" },
 ];
 
 const galleryImages = [home, home, home, home, home, home];
+const cards = [
+  {
+    title: "Retail Shops",
+    typology: "Retail shop",
+    size: "380 - 1879 Sq.Ft",
+  },
+  {
+    title: "Office Spaces",
+    typology: "Office Space",
+    size: "380 - 1879 Sq.Ft",
+  },
+  {
+    title: "Food Courts",
+    typology: "Food Court",
+    size: "380 - 1879 Sq.Ft",
+  },
+];
 
 const Home = () => {
   const [openForm, setOpenForm] = useState(false);
@@ -108,12 +128,16 @@ const Home = () => {
         </div>
       </div>
 
-      {/* part 2 */}
+      {/* part 2 SKA ARCADIA*/}
 
-      <div className="w-full bg-white max-w-7xl mx-auto  py-8 md:py-16 px-5 md:px-16">
+      <div className="w-full  max-w-7xl mx-auto  py-8 md:py-16 px-5 md:px-16">
+        <h1 className="text-3xl text-center mx-auto mb-8 md:text-4xl font-bold text-[#0d1a3a]">
+          SKA ARCADIA
+        </h1>
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           {/* LEFT IMAGE */}
-          <div className="w-full">
+          <div className="w-full ">
             <img
               src={home}
               alt="Omaxe Dwarka"
@@ -123,33 +147,31 @@ const Home = () => {
 
           {/* RIGHT CONTENT */}
           <div className="w-full">
-            <h1 className="text-3xl md:text-4xl font-bold text-[#0d1a3a]">
-              OMAXE STATE DWARKA
-            </h1>
-
             <h2 className="text-[18px] font-semibold mt-2 text-[#0d1a3a] tracking-wide">
-              AT SECTOR 2 C-98, NOIDA, UP
+              Where Your Business Finds Its Perfect Space
             </h2>
 
             <p className="text-gray-700 mt-5 leading-7 text-[16px]">
-              Welcome to The Omaxe State, a groundbreaking commercial venture by
-              Omaxe Group, redefining luxury and opportunity in the heart of
-              Dwarka, Delhi. Located in Sector 19B, the Omaxe Project in Dwarka
-              Delhi spans 50.4 acres, making it India’s largest integrated
-              sports, retail, leisure, and cultural destination. Officially
-              launched in July 2024, this RERA-approved project
-              (DLRERA2024P0003) offers unmatched investment potential under the
-              public-private partnership (PPP) model with the Delhi Development
-              Authority (DDA).
+              Step into SKA Arcadia, a premium commercial hub designed for
+              brands that aspire to grow, scale, and stand out. Strategically
+              located and thoughtfully planned, SKA Arcadia offers modern,
+              move-in ready commercial spaces crafted for retail, offices, and
+              high-visibility businesses. With excellent connectivity, superior
+              build quality, and a thriving neighbourhood, it’s the ideal
+              destination to elevate your business and attract customers
+              effortlessly. Your next big business move begins here.{" "}
             </p>
 
-            <button className="bg-[#0d4da3] text-white px-6 py-3 mt-6 font-semibold rounded">
+            <button
+              onClick={() => setOpenForm(true)}
+              className="bg-[#0d4da3] cursor-pointer text-white px-6 py-3 mt-6 font-semibold rounded"
+            >
               REQUEST DOWNLOAD BROCHURE
             </button>
           </div>
         </div>
       </div>
-      {/*part 3  */}
+      {/*part 3 AMENITIES */}
 
       <div className="w-full  py-8  max-w-7xl mx-auto md:py-12 bg-white">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
@@ -190,17 +212,105 @@ const Home = () => {
         </div>
       </div>
 
-      {/* part 4 */}
-      <div className="w-full max-w-7xl mx-auto py-16 bg-white">
-        {/* --- HEADING --- */}
+      {/* part 4 location Advantage */}
+      <div className="max-w-6xl mx-auto px-4 py-10">
+        <h2 className="text-3xl font-bold mb-6 text-center">
+          LOCATION ADVANTAGES
+        </h2>
+
+        <div className="flex flex-col md:flex-row items-start gap-8">
+          {/* LEFT IMAGE */}
+          <div className="w-full md:w-1/2">
+            <img
+              src={home}
+              alt="Location"
+              className="w-full rounded-xl shadow-md"
+            />
+          </div>
+
+          {/* RIGHT POINTS */}
+          <div className="w-full md:w-1/2 space-y-3">
+            <p className="pb-3 border-b border-gray-300 font-medium">
+              1 min from Delhi–Meerut Expressway
+            </p>
+
+            <p className="pb-3 border-b border-gray-300 font-medium">
+              5 mins to Proposed Metro
+            </p>
+
+            <p className="pb-3 border-b border-gray-300 font-medium">
+              10 mins to Eastern Peripheral Expressway
+            </p>
+
+            <p className="pb-3 border-b border-gray-300 font-medium">
+              20 mins to Greater Noida West & Noida Sec-62
+            </p>
+
+            <p className="pb-3 border-b border-gray-300 font-medium">
+              25 mins to Raj Nagar Extension
+            </p>
+
+            <p className="pb-3 border-b border-gray-300 font-medium">
+              35 mins to Anand Vihar
+            </p>
+
+            <p className="pb-3 border-b border-gray-300 font-medium">
+              35 mins to Akshardham
+            </p>
+
+            <p className="pb-3 border-b border-gray-300 font-medium">
+              35 mins to Noida Sec-18
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* part 5 PRICE */}
+      <div className="w-full bg-white py-16 px-4 flex flex-col items-center relative overflow-hidden">
+        {/* ANGLED BACKGROUND */}
+
+        <h2 className="text-3xl font-semibold text-teal-400 mb-12 relative z-10">
+          Price List
+        </h2>
+
+        <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-10 relative z-10">
+          {cards.map((item, index) => (
+            <div
+              key={index}
+              className="relative bg-white rounded-2xl shadow-xl p-8 flex flex-col items-center text-center border border-gray-200"
+            >
+              {/* TOP TAB */}
+              <div className="absolute -top-6 bg-teal-500 text-white px-8 py-2 rounded-lg text-sm font-semibold shadow-md">
+                {item.title}
+              </div>
+
+              <h3 className="text-xl font-bold mt-6">₹ On Request</h3>
+              <div className="w-full my-4 border-b border-gray-300" />
+
+              <div className="flex w-full justify-between">
+                <p className="text-gray-600 text-sm">Type :</p>
+                <p className="font-semibold mb-3">{item.typology}</p>
+              </div>
+              <div className="flex justify-between w-full">
+                <p className="text-gray-600 text-sm">Size :</p>
+                <p className="font-semibold">{item.size}</p>
+              </div>
+
+              <button className="mt-6 bg-teal-500 text-white px-6 py-2 rounded-md font-semibold hover:bg-teal-600 transition">
+                Know More
+              </button>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* <div className="w-full max-w-7xl mx-auto py-16 bg-white">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
           PRICE
         </h2>
 
-        {/* --- TABLE WRAPPER (Scroll on mobile) --- */}
         <div className="overflow-x-auto px-4">
           <table className="min-w-[700px] w-full border border-gray-300">
-            {/* --- HEADER ROW --- */}
             <thead>
               <tr className="bg-blue-900 text-white text-left">
                 <th className="p-4 font-semibold border border-gray-300">
@@ -214,8 +324,6 @@ const Home = () => {
                 </th>
               </tr>
             </thead>
-
-            {/* --- BODY ROWS --- */}
             <tbody>
               <tr className="border border-gray-300">
                 <td className="p-4">Virtual Retails/Multiplex Spaces</td>
@@ -238,30 +346,27 @@ const Home = () => {
           </table>
         </div>
 
-        {/* 🔽 SCROLL INDICATOR (FULLY OUTSIDE TABLE) 🔽 */}
         <div className="flex md:hidden justify-center mt-6">
           <div className="h-1 w-28 bg-gray-300 rounded-full overflow-hidden">
             <div className="h-1 w-12 bg-blue-900 animate-ping rounded-full"></div>
           </div>
         </div>
 
-        {/* --- BUTTON --- */}
         <div className="flex justify-center mt-10">
           <button className="bg-blue-900 text-white py-3 px-8 rounded-md font-semibold">
             REQUEST DOWNLOAD BROCHURE
           </button>
         </div>
-      </div>
+      </div> */}
 
-      {/* part -5 */}
+      {/* part -6 SITE & FLOOR PLAN */}
 
       <div className="w-full py-16 bg-[#f4f7fc]">
         {/* Heading */}
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold">SITE & FLOOR PLAN</h2>
           <p className="text-gray-600 mt-2">
-            Explore modern layouts in The Omaxe State at Sector 19B, Dwarka,
-            Delhi.
+            Explore opportunities designed for growth.{" "}
           </p>
         </div>
 
@@ -297,9 +402,16 @@ const Home = () => {
         <div className="fixed inset-0 bg-black/40 flex justify-center items-start z-50">
           {/* FORM BOX WITH SLIDE-DOWN ANIMATION */}
           <div
-            className="bg-white w-full max-w-md rounded-lg shadow-xl p-6 mt-10 
+            className="relative bg-white w-full max-w-md rounded-lg shadow-xl p-6 mt-10 
             animate-[slideDown_0.4s_ease-out]"
           >
+            <button
+              onClick={() => setOpenForm(false)}
+              className="absolute top-0 right-1 cursor-pointer px-4 py-1 text-end text-black hover:text-red-600  text-[24px] font-semibold"
+            >
+              x
+            </button>
+
             <h3 className="text-xl font-bold mb-4 text-center">
               Get Floor Plan
             </h3>
@@ -327,12 +439,6 @@ const Home = () => {
             </button>
 
             {/* Close Button */}
-            <button
-              onClick={() => setOpenForm(false)}
-              className="cursor-pointer w-full mt-4 text-black hover:text-red-600 underline text-md font-semibold"
-            >
-              Close
-            </button>
           </div>
         </div>
       )}
@@ -347,7 +453,7 @@ const Home = () => {
         `}
       </style>
 
-      {/* part 6 */}
+      {/* part 7 PROPERTY GALLERY  */}
 
       <div className="w-full py-16 bg-white">
         {/* HEADING */}
@@ -369,7 +475,7 @@ const Home = () => {
         </div>
       </div>
 
-      {/* part 7 */}
+      {/* part 8 map and form */}
 
       <div className="w-full bg-white py-10 px-4">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8">
@@ -436,7 +542,8 @@ const Home = () => {
 const Content = () => (
   <>
     <div className="bg-blue-900 text-white text-center py-2 font-semibold rounded">
-SKA ARCADIA - SIGNATURE HIGH STREET    </div>
+      SKA ARCADIA - SIGNATURE HIGH STREET{" "}
+    </div>
 
     <h1 className="text-3xl md:text-4xl font-bold text-center mt-4">
       Premium Commercial Spaces{" "}
@@ -446,14 +553,17 @@ SKA ARCADIA - SIGNATURE HIGH STREET    </div>
       At Wave City, NH-24, Ghaziabad
     </p>
 
-    <ul className="mt-6 space-y-3 text-gray-700 text-[16px]">
-      <li className="font-semibold">✔ &nbsp; Retail Spaces</li>
-      <li className="font-semibold">✔ &nbsp; Food Courts</li>
-      <li className="font-semibold">✔ &nbsp; Office Spaces</li>
-      <li className="font-semibold"> ✔ &nbsp; Double-height ground shops</li>
-      <li className="font-semibold">
-        {" "}
-        ✔ &nbsp; 2-side open corner plot — maximum visibility.
+    <ul className="mt-6 flex flex-wrap justify-center gap-3 text-gray-700 text-[16px]">
+      <li className="text-center min-w-[120px] bg-blue-900 text-white rounded-lg px-3 py-2 font-semibold">
+        Retail Spaces
+      </li>
+
+      <li className="text-center min-w-[120px] bg-blue-900 text-white rounded-lg px-3 py-2 font-semibold">
+        Food Courts
+      </li>
+
+      <li className="text-center min-w-[120px] bg-blue-900 text-white rounded-lg px-3 py-2 font-semibold">
+        Office Spaces
       </li>
     </ul>
 
