@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../image/logo.jpg";
+import logo from "../../image/logo.png";
 import { Link } from "react-router-dom";
 
 
@@ -17,7 +17,7 @@ const Footer = () => {
             UPRERAPRJ228610
           </p>
 
-          <p className=" text-[15px] mt-4 text-gray-700 leading-relaxed">
+          <p className=" text-[14px] mt-4 text-gray-700 leading-relaxed">
             <span className="font-semibold">Disclaimer :</span> The content is for information purposes only and does not constitute an offer to avail of any service. Prices mentioned are subject to change without notice and properties mentioned are subject to availability. Images for representation purposes only. This website is belong to authorized marketing partner.
           </p>
 

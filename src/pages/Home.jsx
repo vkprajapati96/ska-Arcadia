@@ -1,5 +1,18 @@
 import React, { useState } from "react";
-import home from "../image/homeImg/home.jpg";
+// import home from "../image/homeImg/home.jpg";
+import gallary1 from "../image/homeImg/gallary1.jpg";
+import gallary2 from "../image/homeImg/gallary2.jpg";
+import gallary3 from "../image/homeImg/gallary3.jpg";
+import gallary4 from "../image/homeImg/gallary4.jpg";
+import gallary5 from "../image/homeImg/gallary5.jpg";
+import gallary6 from "../image/homeImg/gallary6.jpg";
+
+import h1 from "../image/homeImg/h1.jpg";
+import floor2 from "../image/homeImg/floor2.jpg";
+import floor3 from "../image/homeImg/floor3.jpg";
+import floor4 from "../image/homeImg/floor4.jpg";
+import map from "../image/homeImg/map.jpg";
+import about from "../image/homeImg/about.jpg";
 
 import { FaHamburger, FaParking, FaVideo, FaBolt } from "react-icons/fa";
 import { GiElevator } from "react-icons/gi";
@@ -10,7 +23,6 @@ import { MdFireExtinguisher } from "react-icons/md";
 
 import { GoDotFill } from "react-icons/go";
 
-
 const data = [
   { icon: <FaHamburger />, title: "Food Courts" },
   { icon: <MdSecurity />, title: "24×7 Security & CCTV" },
@@ -20,7 +32,15 @@ const data = [
   { icon: <FaBolt />, title: "Power Backup" },
 ];
 
-const galleryImages = [home, home, home, home, home, home];
+const galleryImages = [
+  gallary1,
+  gallary2,
+  gallary3,
+  gallary4,
+  gallary5,
+  gallary6,
+];
+
 const cards = [
   {
     title: "Retail Shops",
@@ -45,17 +65,17 @@ const Home = () => {
   const plans = [
     {
       id: 1,
-      img: home,
+      img: floor2,
       title: "Site Plan",
     },
     {
       id: 2,
-      img: home,
+      img: floor3,
       title: "Floor Plan 1",
     },
     {
       id: 3,
-      img: home,
+      img: floor4,
       title: "Floor Plan 2",
     },
   ];
@@ -69,7 +89,7 @@ const Home = () => {
           <div
             className="relative w-full h-[300px] md:h-[750px] overflow-hidden shadow-lg order-1"
             style={{
-              backgroundImage: `url(${home})`,
+              backgroundImage: `url(${h1})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
@@ -83,7 +103,7 @@ const Home = () => {
               bg-white p-8 rounded-lg shadow-xl
             "
             >
-              <Content />
+              <Content setOpenForm={setOpenForm} />
             </div>
           </div>
 
@@ -120,7 +140,7 @@ const Home = () => {
             <select className="w-full border border-gray-300 p-2 mb-4 rounded">
               <option>Select Property</option>
               <option>Retail Space</option>
-              <option>Commercial</option>
+              <option>Food Court</option>
               <option>Office Space</option>
             </select>
 
@@ -133,7 +153,10 @@ const Home = () => {
 
       {/* part 2 SKA ARCADIA*/}
 
-      <div className="w-full  max-w-7xl mx-auto  py-8 md:py-16 px-5 md:px-16">
+      <div
+        id="about"
+        className="w-full  max-w-7xl mx-auto  py-8 md:py-16 px-5 md:px-16"
+      >
         <h1 className="text-3xl text-center mx-auto mb-8 md:text-4xl font-bold text-[#0d1a3a]">
           SKA ARCADIA
         </h1>
@@ -142,7 +165,7 @@ const Home = () => {
           {/* LEFT IMAGE */}
           <div className="w-full ">
             <img
-              src={home}
+              src={about}
               alt="Omaxe Dwarka"
               className="w-full h-full object-cover rounded"
             />
@@ -176,7 +199,10 @@ const Home = () => {
       </div>
       {/*part 3 AMENITIES */}
 
-      <div className="w-full  py-8  max-w-7xl mx-auto md:py-12 bg-white">
+      <div
+        id="amenities"
+        className="w-full  py-8  max-w-7xl mx-auto md:py-12 bg-white"
+      >
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
           AMENITIES
         </h2>
@@ -216,65 +242,68 @@ const Home = () => {
       </div>
 
       {/* part 4 location Advantage */}
-      <div className="max-w-6xl mx-auto px-4 py-10">
-        <h2 className="text-3xl font-bold mb-6 text-center">
-          LOCATION ADVANTAGES
-        </h2>
+      <div className="bg-[#f4f7fc]">
+        <div className="max-w-7xl mx-auto  px-4 py-10">
+          <h2 className="text-3xl font-bold mb-6 text-center">
+            LOCATION ADVANTAGES
+          </h2>
 
-        <div className="flex flex-col md:flex-row items-start gap-8">
-          {/* LEFT IMAGE */}
-          <div className="w-full md:w-1/2">
-            <img
-              src={home}
-              alt="Location"
-              className="w-full rounded-xl shadow-md"
-            />
-          </div>
+          <div className="flex flex-col md:flex-row items-start gap-8">
+            {/* LEFT IMAGE */}
+            <div className="w-full md:w-1/2">
+              <img
+                src={map}
+                alt="Location"
+                className="w-full rounded-xl shadow-md"
+              />
+            </div>
 
-          {/* RIGHT POINTS */}
-          <div className="w-full md:w-1/2 space-y-3">
-            <p className="pb-3 border-b border-gray-300 font-medium">
-              1 min from Delhi–Meerut Expressway
-            </p>
+            {/* RIGHT POINTS */}
+            <div className="w-full md:w-1/2 space-y-3">
+              <p className="pb-3 border-b border-gray-300 font-medium">
+                1 min from Delhi–Meerut Expressway
+              </p>
 
-            <p className="pb-3 border-b border-gray-300 font-medium">
-              5 mins to Proposed Metro
-            </p>
+              <p className="pb-3 border-b border-gray-300 font-medium">
+                5 mins to Proposed Metro
+              </p>
 
-            <p className="pb-3 border-b border-gray-300 font-medium">
-              10 mins to Eastern Peripheral Expressway
-            </p>
+              <p className="pb-3 border-b border-gray-300 font-medium">
+                10 mins to Eastern Peripheral Expressway
+              </p>
 
-            <p className="pb-3 border-b border-gray-300 font-medium">
-              20 mins to Greater Noida West & Noida Sec-62
-            </p>
+              <p className="pb-3 border-b border-gray-300 font-medium">
+                20 mins to Greater Noida West & Noida Sec-62
+              </p>
 
-            <p className="pb-3 border-b border-gray-300 font-medium">
-              25 mins to Raj Nagar Extension
-            </p>
+              <p className="pb-3 border-b border-gray-300 font-medium">
+                25 mins to Raj Nagar Extension
+              </p>
 
-            <p className="pb-3 border-b border-gray-300 font-medium">
-              35 mins to Anand Vihar
-            </p>
+              <p className="pb-3 border-b border-gray-300 font-medium">
+                35 mins to Anand Vihar
+              </p>
 
-            <p className="pb-3 border-b border-gray-300 font-medium">
-              35 mins to Akshardham
-            </p>
+              <p className="pb-3 border-b border-gray-300 font-medium">
+                35 mins to Akshardham
+              </p>
 
-            <p className="pb-3 border-b border-gray-300 font-medium">
-              35 mins to Noida Sec-18
-            </p>
+              <p className="pb-3 border-b border-gray-300 font-medium">
+                35 mins to Noida Sec-18
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
       {/* part 5 PRICE */}
-      <div className="w-full bg-white py-16 px-4 flex flex-col items-center relative overflow-hidden">
+      <div
+        id="price"
+        className="w-full bg-white py-16 px-4 flex flex-col items-center relative overflow-hidden"
+      >
         {/* ANGLED BACKGROUND */}
 
-        <h2 className="text-3xl font-bold  mb-12 relative z-10">
-          PRICE LIST
-        </h2>
+        <h2 className="text-3xl font-bold  mb-12 relative z-10">PRICE LIST</h2>
 
         <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-10 relative z-10">
           {cards.map((item, index) => (
@@ -299,7 +328,10 @@ const Home = () => {
                 <p className="font-semibold">{item.size}</p>
               </div>
 
-              <button className="mt-6 bg-blue-500 text-white px-6 py-2 rounded-md font-semibold hover:bg-teal-600 transition">
+              <button
+                onClick={() => setOpenForm(true)}
+                className="mt-6 bg-blue-400 text-white px-6 py-2 rounded-md font-semibold hover:bg-blue-500 transition"
+              >
                 Know More
               </button>
             </div>
@@ -307,64 +339,9 @@ const Home = () => {
         </div>
       </div>
 
-      {/* <div className="w-full max-w-7xl mx-auto py-16 bg-white">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-          PRICE
-        </h2>
-
-        <div className="overflow-x-auto px-4">
-          <table className="min-w-[700px] w-full border border-gray-300">
-            <thead>
-              <tr className="bg-blue-900 text-white text-left">
-                <th className="p-4 font-semibold border border-gray-300">
-                  TYPE
-                </th>
-                <th className="p-4 font-semibold border border-gray-300">
-                  SIZES
-                </th>
-                <th className="p-4 font-semibold border border-gray-300">
-                  PRICE
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr className="border border-gray-300">
-                <td className="p-4">Virtual Retails/Multiplex Spaces</td>
-                <td className="p-4">40 Sq.Ft.</td>
-                <td className="p-4">On Request</td>
-              </tr>
-
-              <tr className="border border-gray-300">
-                <td className="p-4">Lockable Retail Shops</td>
-                <td className="p-4">200-1500 Sq.Ft.</td>
-                <td className="p-4">On Request</td>
-              </tr>
-
-              <tr className="border border-gray-300">
-                <td className="p-4">Food Court/Restaurants</td>
-                <td className="p-4">478-3000 Sq.Ft.</td>
-                <td className="p-4">On Request</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div className="flex md:hidden justify-center mt-6">
-          <div className="h-1 w-28 bg-gray-300 rounded-full overflow-hidden">
-            <div className="h-1 w-12 bg-blue-900 animate-ping rounded-full"></div>
-          </div>
-        </div>
-
-        <div className="flex justify-center mt-10">
-          <button className="bg-blue-900 text-white py-3 px-8 rounded-md font-semibold">
-            REQUEST DOWNLOAD BROCHURE
-          </button>
-        </div>
-      </div> */}
-
       {/* part -6 SITE & FLOOR PLAN */}
 
-      <div className="w-full py-16 bg-[#f4f7fc]">
+      <div id="floors" className="w-full py-16 bg-[#f4f7fc]">
         {/* Heading */}
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold">SITE & FLOOR PLAN</h2>
@@ -390,7 +367,7 @@ const Home = () => {
                 <button
                   onClick={() => setOpenForm(true)}
                   className="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-                  bg-blue-500 text-white px-6 py-2 rounded-md font-semibold shadow"
+                  bg-blue-400 hover:bg-blue-500  text-white px-6 py-2 rounded-md font-semibold shadow"
                 >
                   VIEW PLAN
                 </button>
@@ -402,7 +379,7 @@ const Home = () => {
 
       {/* POPUP FORM OVERLAY */}
       {openForm && (
-        <div className="fixed inset-0 bg-black/40 flex justify-center items-start z-50">
+        <form className="fixed inset-0 bg-black/40 flex justify-center items-start z-50">
           {/* FORM BOX WITH SLIDE-DOWN ANIMATION */}
           <div
             className="relative bg-white w-full max-w-md rounded-lg shadow-xl p-6 mt-10 
@@ -415,19 +392,11 @@ const Home = () => {
               x
             </button>
 
-            <h3 className="text-xl font-bold mb-4 text-center">
-              Get Floor Plan
-            </h3>
+            <h3 className="text-xl font-bold mb-4 text-center">Get In Touch</h3>
 
             <input
               type="text"
               placeholder="Your Name"
-              className="w-full border p-3 rounded mb-3"
-            />
-
-            <input
-              type="text"
-              placeholder="Phone Number"
               className="w-full border p-3 rounded mb-3"
             />
 
@@ -437,13 +406,25 @@ const Home = () => {
               className="w-full border p-3 rounded mb-3"
             />
 
-            <button className="cursor-pointer w-full bg-blue-900 text-white py-3 rounded mt-2">
+            <input
+              type="text"
+              placeholder="Phone Number"
+              className="w-full border p-3 rounded mb-3"
+            />
+            <select className="w-full p-3 border rounded-sm text-gray-600 focus:outline-none">
+              <option>Select Property</option>
+              <option>Retail Space</option>
+              <option>Food Court</option>
+              <option>Office Space</option>
+            </select>
+
+            <button className="cursor-pointer w-full bg-blue-900 hover:bg-blue-800 text-white py-3 rounded mt-2">
               Submit
             </button>
 
             {/* Close Button */}
           </div>
-        </div>
+        </form>
       )}
 
       {/* Tailwind Custom Animation */}
@@ -461,7 +442,7 @@ const Home = () => {
       <div className="w-full py-16 bg-white">
         {/* HEADING */}
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">
-           GALLERY
+          GALLERY
         </h2>
 
         {/* GRID */}
@@ -480,7 +461,7 @@ const Home = () => {
 
       {/* part 8 map and form */}
 
-      <div className="w-full bg-white py-10 px-4">
+      <div id="contact" className="w-full bg-white py-10 px-4">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8">
           {/* LEFT MAP (EXACT SAME WIDTH & HEIGHT) */}
           <div className="w-full md:w-[65%] h-[480px]">
@@ -496,10 +477,7 @@ const Home = () => {
 
           {/* RIGHT FORM BOX EXACT SAME LOOK */}
           <div className="w-full md:w-[35%] bg-[#f8fafc]  p-8 shadow-lg">
-            <h2 className="text-2xl font-semibold mb-6">
-              Get In Touch
-              
-          </h2>
+            <h2 className="text-2xl font-semibold mb-6">Get In Touch</h2>
 
             <form className="space-y-4">
               <input
@@ -522,14 +500,14 @@ const Home = () => {
 
               <select className="w-full p-3 border rounded-sm text-gray-600 focus:outline-none focus:border-blue-600">
                 <option>Select Property</option>
-                <option>Apartment</option>
-                <option>Villa</option>
-                <option>Commercial</option>
+                <option>Retail Space</option>
+                <option>Food Court</option>
+                <option>Office Space</option>
               </select>
 
               <button
                 type="submit"
-                className="w-full bg-blue-700 text-white py-3 rounded-sm hover:bg-blue-800"
+                className="cursor-pointer w-full bg-blue-400 text-white py-3 rounded-sm hover:bg-blue-400"
               >
                 Submit
               </button>
@@ -543,7 +521,7 @@ const Home = () => {
   );
 };
 
-const Content = () => (
+const Content = ({ setOpenForm }) => (
   <>
     <div className="bg-blue-900 text-white text-center py-2 font-semibold rounded">
       MOVE - IN READY{" "}
@@ -571,26 +549,20 @@ const Content = () => (
       </li>
     </ul>
 
-
-<div className="text-center mb-4 flex justify-around text-[18px]">
-  <p className="flex items-center gap-2">
-    <GoDotFill size={15} className="text-[10px]" />
-    RERA Approved
-  </p>
-
-  <p className="flex items-center gap-2">
-    <GoDotFill size={15} className="text-[10px]" />
-    Payment Plan 40:60
-  </p>
-</div>
-
-    <div className="border border-blue-800 bg-blue-900 text-white text-center py-2 mt-6 rounded">
-
-      <p className="font-semibold text-lg">
-
-        Contact Now +91 836 860 4905
+    <div className="text-center mb-4 flex justify-around text-[18px]">
+      <p className="flex items-center gap-2">
+        <GoDotFill size={15} className="text-[10px]" />
+        RERA Approved
       </p>
 
+      <p className="flex items-center gap-2">
+        <GoDotFill size={15} className="text-[10px]" />
+        Payment Plan 40:60
+      </p>
+    </div>
+
+    <div className="border border-blue-800 bg-blue-900 text-white text-center py-2 mt-6 rounded">
+      <p className="font-semibold text-lg">Contact Now +91 836 860 4905</p>
     </div>
 
     <p className="text-center mt-6 text-gray-700 text-lg font-medium">
@@ -602,7 +574,10 @@ const Content = () => (
     </h2>
 
     <div className="text-center mt-6">
-      <button className="bg-blue-900 text-white py-2 px-6 rounded-md text-lg">
+      <button
+        onClick={() => setOpenForm(true)}
+        className="cursor-pointer bg-blue-900 hover:bg-blue-800 text-white py-2 px-6 rounded-md text-lg"
+      >
         ENQUIRY NOW
       </button>
     </div>
