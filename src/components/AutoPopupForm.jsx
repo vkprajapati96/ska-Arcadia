@@ -76,7 +76,7 @@ export default function AutoPopupForm() {
 
           <input
                     type="number"
-          name="phone"
+          name="tel"
           placeholder="Phone Number"
           min="0"
           required

@@ -60,7 +60,7 @@ const Contact = () => {
 
         {/* Phone */}
         <input
-          type="number"
+          type="tel"
           name="phone"
           placeholder="Phone Number"
           min="0"
