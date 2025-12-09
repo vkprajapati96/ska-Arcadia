@@ -14,6 +14,8 @@ import { useLocation } from "react-router-dom";
 
 
 const  App = () => {
+    const location = useLocation();
+
     const hideLayout = location.pathname === "/thankyou";
 
   return (
