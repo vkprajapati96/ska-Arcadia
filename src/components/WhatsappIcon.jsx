@@ -3,9 +3,11 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const WhatsappIcon = () => {
   const phoneNumber = "918368604905"; // country code + number
-  const whatsappURL = `https://wa.me/${phoneNumber}`;
+  const message = "Hello, I’m interested in SKA Arcadia. Can I get more info?";
+  const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
   return (
-    <div className="">
+    <div>
       <a
         className="fixed bottom-5 right-5 z-50 bg-green-400 hover:bg-green-500 p-2 rounded-full"
         href={whatsappURL}
@@ -14,7 +16,6 @@ const WhatsappIcon = () => {
       >
         <FaWhatsapp
           size={40}
-          color=""
           className="w-10 h-10 text-white transition-all duration-300"
         />
       </a>
