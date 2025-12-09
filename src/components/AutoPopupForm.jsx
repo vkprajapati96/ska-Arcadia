@@ -75,14 +75,15 @@ export default function AutoPopupForm() {
           />
 
           <input
-            type="number"
-            name="user_phone"              // ⭐ EMAILJS NAME
-            placeholder="Phone Number"
-            className="border p-2 rounded-md"
-            min="0"
-            required
+                    type="number"
+          name="phone"
+          placeholder="Phone Number"
+          min="0"
+          required
+        className="border p-2 rounded-md"
           />
 
+        
           <input
             type="text"
             name="property_type"          // ⭐ EMAILJS NAME
