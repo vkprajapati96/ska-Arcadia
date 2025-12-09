@@ -22,6 +22,7 @@ import { FaUsers } from "react-icons/fa";
 import { MdFireExtinguisher } from "react-icons/md";
 
 import { GoDotFill } from "react-icons/go";
+import Contact from "../components/Contact";
 
 const data = [
   { icon: <FaHamburger />, title: "Food Courts" },
@@ -113,41 +114,7 @@ const Home = () => {
           </div>
 
           {/* ---------------- RIGHT FORM ---------------- */}
-          <div className=" shadow-md p-6 md:p-8  h-full w-full order-3  md:mt-0">
-            <h2 className="text-2xl md:text-3xl font-semibold text-center mb-6">
-              Get In Touch
-            </h2>
-
-            <input
-              type="text"
-              placeholder="Full Name"
-              className="w-full border border-gray-300 p-2 mb-4 rounded"
-            />
-
-            <input
-              type="email"
-              placeholder="Email Id"
-              className="w-full border border-gray-300 p-2 mb-4 rounded"
-            />
-
-            <input
-              type="number"
-              placeholder="Phone Number"
-              min="0"
-              className="w-full border border-gray-300 p-2 mb-4 rounded"
-            />
-
-            <select className="w-full border border-gray-300 p-2 mb-4 rounded">
-              <option>Select Property</option>
-              <option>Retail Space</option>
-              <option>Food Court</option>
-              <option>Office Space</option>
-            </select>
-
-            <button className="w-full cursor-pointer bg-blue-900 text-white py-3 rounded-md text-lg font-semibold">
-              Submit
-            </button>
-          </div>
+          <Contact />
         </div>
       </div>
 
@@ -157,7 +124,7 @@ const Home = () => {
         id="about"
         className="w-full  max-w-7xl mx-auto  py-8 md:py-16 px-5 md:px-16"
       >
-        <h1 className="text-3xl text-center mx-auto mb-8 md:text-4xl font-bold text-[#0d1a3a]">
+        <h1 className="text-3xl text-center mx-auto mb-8 md:text-4xl font-bold">
           SKA ARCADIA
         </h1>
 
@@ -378,54 +345,30 @@ const Home = () => {
       </div>
 
       {/* POPUP FORM OVERLAY */}
-      {openForm && (
-        <form className="fixed inset-0 bg-black/40 flex justify-center items-start z-50">
-          {/* FORM BOX WITH SLIDE-DOWN ANIMATION */}
-          <div
-            className="relative bg-white w-full max-w-md rounded-lg shadow-xl p-6 mt-10 
-            animate-[slideDown_0.4s_ease-out]"
-          >
-            <button
-              onClick={() => setOpenForm(false)}
-              className="absolute top-0 right-1 cursor-pointer px-4 py-1 text-end text-black hover:text-red-600  text-[24px] font-semibold"
-            >
-              x
-            </button>
+{/* POPUP FORM OVERLAY */}
+{openForm && (
+  <div className="fixed inset-0 bg-black/40 flex justify-center items-start z-50">
 
-            <h3 className="text-xl font-bold mb-4 text-center">Get In Touch</h3>
+    {/* FORM BOX */}
+    <div
+      className="relative bg-white w-full max-w-md rounded-lg shadow-[0px] p-6 mt-10 
+      animate-[slideDown_0.4s_ease-out]"
+    >
+      {/* Close Button */}
+      <button
+        onClick={() => setOpenForm(false)}
+        className="absolute top-0 right-1 cursor-pointer px-4 py-1 text-end 
+        text-black hover:text-red-600 text-[24px] font-semibold"
+      >
+        x
+      </button>
 
-            <input
-              type="text"
-              placeholder="Your Name"
-              className="w-full border p-3 rounded mb-3"
-            />
+      {/* IMPORT CONTACT FORM HERE */}
+      <Contact />
+    </div>
+  </div>
+)}
 
-            <input
-              type="email"
-              placeholder="Email"
-              className="w-full border p-3 rounded mb-3"
-            />
-
-            <input
-              type="text"
-              placeholder="Phone Number"
-              className="w-full border p-3 rounded mb-3"
-            />
-            <select className="w-full p-3 border rounded-sm text-gray-600 focus:outline-none">
-              <option>Select Property</option>
-              <option>Retail Space</option>
-              <option>Food Court</option>
-              <option>Office Space</option>
-            </select>
-
-            <button className="cursor-pointer w-full bg-blue-900 hover:bg-blue-800 text-white py-3 rounded mt-2">
-              Submit
-            </button>
-
-            {/* Close Button */}
-          </div>
-        </form>
-      )}
 
       {/* Tailwind Custom Animation */}
       <style>
@@ -476,42 +419,9 @@ const Home = () => {
           </div>
 
           {/* RIGHT FORM BOX EXACT SAME LOOK */}
-          <div className="w-full md:w-[35%] bg-[#f8fafc]  p-8 shadow-lg">
-            <h2 className="text-2xl font-semibold mb-6">Get In Touch</h2>
+          <div className="w-full md:w-[35%] bg-[#f8fafc] ">
 
-            <form className="space-y-4">
-              <input
-                type="text"
-                placeholder="Full Name"
-                className="w-full p-3 border rounded-sm focus:outline-none focus:border-blue-600"
-              />
-
-              <input
-                type="email"
-                placeholder="Email Id"
-                className="w-full p-3 border rounded-sm focus:outline-none focus:border-blue-600"
-              />
-
-              <input
-                type="text"
-                placeholder="Phone Number"
-                className="w-full p-3 border rounded-sm focus:outline-none focus:border-blue-600"
-              />
-
-              <select className="w-full p-3 border rounded-sm text-gray-600 focus:outline-none focus:border-blue-600">
-                <option>Select Property</option>
-                <option>Retail Space</option>
-                <option>Food Court</option>
-                <option>Office Space</option>
-              </select>
-
-              <button
-                type="submit"
-                className="cursor-pointer w-full bg-blue-900 text-white py-3 rounded-sm hover:bg-blue-800"
-              >
-                Submit
-              </button>
-            </form>
+            <Contact />
           </div>
         </div>
       </div>

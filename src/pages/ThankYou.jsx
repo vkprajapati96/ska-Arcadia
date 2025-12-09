@@ -17,12 +17,11 @@ const ThankYou = () => {
 
       <button
         onClick={handleBackHome}
-        className="mt-6 px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition"
+        className="mt-6 px-6 py-3 bg-blue-900 text-white font-semibold rounded-lg hover:bg-blue-800 transition"
       >
         Back to Home
       </button>
 
-      
     </div>
   );
 };
