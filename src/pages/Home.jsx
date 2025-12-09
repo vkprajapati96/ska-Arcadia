@@ -109,7 +109,7 @@ const Home = () => {
 
           {/* ---------------- MOBILE CONTENT (NOT ABSOLUTE) ---------------- */}
           <div className="block md:hidden order-2 px-5 bg-white p-6 rounded-lg shadow-xl">
-            <Content />
+            <Content setOpenForm={setOpenForm} />
           </div>
 
           {/* ---------------- RIGHT FORM ---------------- */}
