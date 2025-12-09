@@ -144,7 +144,7 @@ const Home = () => {
               <option>Office Space</option>
             </select>
 
-            <button className="w-full bg-blue-900 text-white py-3 rounded-md text-lg font-semibold">
+            <button className="w-full cursor-pointer bg-blue-900 text-white py-3 rounded-md text-lg font-semibold">
               Submit
             </button>
           </div>
@@ -312,7 +312,7 @@ const Home = () => {
               className="relative bg-white rounded-2xl shadow-xl p-8 flex flex-col items-center text-center border border-gray-200"
             >
               {/* TOP TAB */}
-              <div className="absolute -top-6 bg-blue-500 text-white px-8 py-2 rounded-lg text-sm font-semibold shadow-md">
+              <div className="absolute -top-6 bg-blue-900 text-white px-8 py-2 rounded-lg text-sm font-semibold shadow-md">
                 {item.title}
               </div>
 
@@ -330,7 +330,7 @@ const Home = () => {
 
               <button
                 onClick={() => setOpenForm(true)}
-                className="mt-6 bg-blue-400 text-white px-6 py-2 rounded-md font-semibold hover:bg-blue-500 transition"
+                className="mt-6 cursor-pointer bg-blue-900 text-white px-6 py-2 rounded-md font-semibold hover:bg-blue-800 transition"
               >
                 Know More
               </button>
@@ -367,7 +367,7 @@ const Home = () => {
                 <button
                   onClick={() => setOpenForm(true)}
                   className="cursor-pointer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-                  bg-blue-400 hover:bg-blue-500  text-white px-6 py-2 rounded-md font-semibold shadow"
+                  bg-blue-900 hover:bg-blue-800  text-white px-6 py-2 rounded-md font-semibold shadow"
                 >
                   VIEW PLAN
                 </button>
@@ -439,7 +439,7 @@ const Home = () => {
 
       {/* part 7 PROPERTY GALLERY  */}
 
-      <div className="w-full py-16 bg-white">
+      <div className="w-full py-10 bg-white ">
         {/* HEADING */}
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">
           GALLERY
@@ -507,7 +507,7 @@ const Home = () => {
 
               <button
                 type="submit"
-                className="cursor-pointer w-full bg-blue-400 text-white py-3 rounded-sm hover:bg-blue-400"
+                className="cursor-pointer w-full bg-blue-900 text-white py-3 rounded-sm hover:bg-blue-800"
               >
                 Submit
               </button>

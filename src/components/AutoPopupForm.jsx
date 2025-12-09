@@ -19,7 +19,7 @@ export default function AutoPopupForm() {
         {/* Close Button */}
         <button
           onClick={() => setShow(false)}
-          className="absolute top-3 right-3 text-gray-600 text-3xl py-1 px-2 hover:text-red-600 font-bold"
+          className="absolute top-3 cursor-pointer right-3 text-gray-600 text-3xl py-1 px-2 hover:text-red-600 font-bold"
         >
           ×
         </button>
@@ -56,7 +56,7 @@ export default function AutoPopupForm() {
 
           {/* Now Email */}
 
-          <button className="bg-blue-900 hover:bg-blue-800 text-white p-2 rounded-md mt-2">
+          <button className="bg-blue-900 cursor-pointer hover:bg-blue-800 text-white p-2 rounded-md mt-2">
             Submit
           </button>
         </form>
