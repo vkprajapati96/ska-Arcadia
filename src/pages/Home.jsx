@@ -305,7 +305,7 @@ const Home = () => {
 
         <h2 className="text-3xl font-bold  mb-12 relative z-10">PRICE LIST</h2>
 
-        <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-10 relative z-10">
+        <div className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-3 gap-15 md:gap-10 relative z-10">
           {cards.map((item, index) => (
             <div
               key={index}
