@@ -49,7 +49,7 @@ const Navbar = () => {
 
         {/* Call Button (Desktop) */}
         <a
-          href="tel:+917827613187"
+          href="tel:+918368604905"
           className="hidden lg:flex items-center gap-2 bg-blue-900 text-white py-3 px-5 rounded-md font-semibold"
         >
           <FiPhone size={20} /> +91-836 860 4905
@@ -101,7 +101,7 @@ const Navbar = () => {
             </li>
 
             <a onClick={() => setOpen(!open)}
-              href="tel:+917827613187"
+              href="tel:+918368604905"
               className="flex justify-center items-center gap-2 bg-blue-900 text-white py-3 mx-10 rounded-md mt-4"
             >
               <FiPhone size={20} /> +91-836 860 4905
