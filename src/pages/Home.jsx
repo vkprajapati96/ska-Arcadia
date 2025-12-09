@@ -466,7 +466,7 @@ const Home = () => {
           {/* LEFT MAP (EXACT SAME WIDTH & HEIGHT) */}
           <div className="w-full md:w-[65%] h-[480px]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2924.1493672740803!2d77.31248657549908!3d28.584622875690894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a83e8c2b7d%3A0x9d9bed3612f70196!2sThe%20Star%20Solution!5e1!3m2!1sen!2sin!4v1765022003732!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3327.9355167135323!2d77.48452278167333!3d28.65461261372219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf31e874eb2b7%3A0xb65f0175feec00e4!2sSKA%20Arcadia!5e1!3m2!1sen!2sin!4v1765266087413!5m2!1sen!2sin"
               className="w-full h-full"
               style={{ border: "0" }}
               allowFullScreen
