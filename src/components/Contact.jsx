@@ -41,20 +41,21 @@ const Contact = () => {
 
         {/* Full Name */}
         <input
-          type="text"
-          name="full_name"               // ✔ EmailJS field name
-          placeholder="Full Name"
+         type="text"
+        name="user_name"                
+        placeholder="Your Name"
+            required
+        
           className="w-full border border-gray-300 p-2 mb-4 rounded"
-          required
         />
 
         {/* Email */}
         <input
           type="email"
-          name="email"
-          placeholder="Email Id"
+            name="user_email"              
+            placeholder="Your Email"
+            required
           className="w-full border border-gray-300 p-2 mb-4 rounded"
-          required
         />
 
         {/* Phone */}

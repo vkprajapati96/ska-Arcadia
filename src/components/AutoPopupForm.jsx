@@ -60,18 +60,18 @@ export default function AutoPopupForm() {
 
           <input
             type="text"
-            name="user_name"                // ⭐ EMAILJS NAME
+            name="user_name"                
             placeholder="Your Name"
-            className="border p-2 rounded-md"
             required
+            className="border p-2 rounded-md"
           />
 
           <input
             type="email"
-            name="user_email"              // ⭐ EMAILJS NAME
+            name="user_email"              
             placeholder="Your Email"
-            className="border p-2 rounded-md"
             required
+            className="border p-2 rounded-md"
           />
 
           <input
