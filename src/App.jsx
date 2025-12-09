@@ -9,13 +9,18 @@ import AutoPopupForm from './components/AutoPopupForm'
 import ScrollTop from './components/ScrollTop'
 import CallButton from './components/CallButton'
 import WhatsappIcon from './components/WhatsappIcon'
+import { useLocation } from "react-router-dom";
+
+
 
 const  App = () => {
+    const hideLayout = location.pathname === "/thankyou";
+
   return (
     <>
     <CallButton/>
     <ScrollTop/>
-    <Navbar/>
+      {!hideLayout && <Navbar />}
     <WhatsappIcon/>
     <AutoPopupForm/>
     <Routes>
@@ -23,7 +28,8 @@ const  App = () => {
       <Route path='/privacypolicy' element={<PrivacyPolicy/>} />
       <Route path='/thankyou' element={<ThankYou/>} />
     </Routes>
-    <Footer/>
+      {!hideLayout && <Footer />}
+
     </>
   )
 }

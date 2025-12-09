@@ -2,7 +2,6 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 
-
 const Contact = () => {
   const form = useRef();
 
@@ -11,15 +10,18 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_wgpy9hw",      // ✔ Your Service ID
-        "template_qtwg46d",     // ✔ Your Template ID
+        "service_wgpy9hw",
+        "template_qtwg46d",
         form.current,
-        "7aKLUOXWf-nIxGGA7"     // ✔ Your Public Key
+        "7aKLUOXWf-nIxGGA7"
       )
       .then(
         () => {
           toast.success("Message sent successfully!");
           form.current.reset();
+
+          // 🔥 Redirect to your Thank You Page
+          window.location.href = "/thankyou";
         },
         (error) => {
           console.log(error.text);
@@ -39,26 +41,22 @@ const Contact = () => {
           Get In Touch
         </h2>
 
-        {/* Full Name */}
         <input
-         type="text"
-        name="user_name"                
-        placeholder="Your Name"
-            required
-        
+          type="text"
+          name="user_name"
+          placeholder="Your Name"
+          required
           className="w-full border border-gray-300 p-2 mb-4 rounded"
         />
 
-        {/* Email */}
         <input
           type="email"
-            name="user_email"              
-            placeholder="Your Email"
-            required
+          name="user_email"
+          placeholder="Your Email"
+          required
           className="w-full border border-gray-300 p-2 mb-4 rounded"
         />
 
-        {/* Phone */}
         <input
           type="tel"
           name="phone"
@@ -68,7 +66,6 @@ const Contact = () => {
           required
         />
 
-        {/* Property Type */}
         <input
           type="text"
           name="property_type"
@@ -76,7 +73,6 @@ const Contact = () => {
           className="w-full border border-gray-300 p-2 mb-4 rounded"
         />
 
-        {/* Submit Button */}
         <button
           type="submit"
           className="w-full cursor-pointer bg-blue-900 text-white py-3 rounded-md text-lg font-semibold"
