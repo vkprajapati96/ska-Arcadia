@@ -7,7 +7,8 @@ import gallary4 from "../image/homeImg/gallary4.jpg";
 import gallary5 from "../image/homeImg/gallary5.jpg";
 import gallary6 from "../image/homeImg/gallary6.jpg";
 
-import h1 from "../image/homeImg/h1.jpg";
+// import h1 from "../image/homeImg/h1.jpg";
+import hero from "../image/homeImg/hero.jpg";
 import floor2 from "../image/homeImg/floor2.jpg";
 import floor3 from "../image/homeImg/floor3.jpg";
 import floor4 from "../image/homeImg/floor4.jpg";
@@ -90,7 +91,7 @@ const Home = () => {
           <div
             className="relative w-full h-[300px] md:h-[750px] overflow-hidden shadow-lg order-1"
             style={{
-              backgroundImage: `url(${h1})`,
+              backgroundImage: `url(${hero})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
@@ -145,14 +146,7 @@ const Home = () => {
             </h2>
 
             <p className="text-gray-700 mt-5 leading-7 text-[16px]">
-              Step into SKA Arcadia, a premium commercial hub designed for
-              brands that aspire to grow, scale, and stand out. Strategically
-              located and thoughtfully planned, SKA Arcadia offers modern,
-              move-in ready commercial spaces crafted for retail, offices, and
-              high-visibility businesses. With excellent connectivity, superior
-              build quality, and a thriving neighbourhood, it’s the ideal
-              destination to elevate your business and attract customers
-              effortlessly. Your next big business move begins here.{" "}
+SKA ARCADIA is a RERA - Approved premium commercial project offering modern, move-in-ready retail and office spaces designed for business growth and steady returns. With excellent location, strong connectivity, and quality construction, it provides the right environment for brands and investors - enhanced by the Double Rental, Double Dhamaka Offer featuring 2 years assured rental post possession, 2 years FREE maintenance, and an easy 40:60 payment plan, making it a simple and smart commercial investment choice.
             </p>
 
             <button
@@ -433,8 +427,8 @@ const Home = () => {
 
 const Content = ({ setOpenForm }) => (
   <>
-    <div className="bg-blue-900 text-white text-center py-2 font-semibold rounded">
-      MOVE - IN READY{" "}
+    <div className="bg-blue-900 text-yellow-300 text-center py-2 font-semibold rounded">
+      DOUBLE RENTAL, DOUBLE DHAMAKA
     </div>
 
     <h1 className="text-3xl md:text-4xl font-bold text-center mt-4">
@@ -459,10 +453,10 @@ const Content = ({ setOpenForm }) => (
       </li>
     </ul>
 
-    <div className="text-center mb-4 flex justify-around text-[18px]">
+    <div className="text-center mb-4 flex justify-around  text-[16px]">
       <p className="flex items-center gap-2">
         <GoDotFill size={15} className="text-[10px]" />
-        RERA Approved
+        RERA Approved Project
       </p>
 
       <p className="flex items-center gap-2">
@@ -470,6 +464,18 @@ const Content = ({ setOpenForm }) => (
         Payment Plan 40:60
       </p>
     </div>
+    <div className="text-center mb-4 flex justify-around  text-[16px]">
+      <p className="flex items-center gap-2">
+        <GoDotFill size={15} className="text-[10px]" />
+        2 Years Rental post Possession 
+      </p>
+
+      <p className="flex items-center gap-2">
+        <GoDotFill size={15} className="text-[10px]" />
+        2 Years Free Maintenance 
+      </p>
+    </div>
+
 
     <div className="border border-blue-800 bg-blue-900 text-white text-center py-2 mt-6 rounded">
       <p className="font-semibold text-lg">Contact Now +91 836 860 4905</p>

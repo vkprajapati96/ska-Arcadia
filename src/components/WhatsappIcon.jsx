@@ -20,7 +20,9 @@ const WhatsappIcon = () => {
         />
       </a>
     </div>
-  );
+      
+);    
+
 };
 
 export default WhatsappIcon;
