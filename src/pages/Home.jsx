@@ -436,9 +436,9 @@ SKA ARCADIA is a RERA - Approved premium commercial project offering modern, mov
 
 const Content = ({ setOpenForm }) => (
   <>
-    <div className="bg-blue-900 text-yellow-300 text-center py-2 font-semibold rounded">
-      DOUBLE RENTAL, DOUBLE DHAMAKA
-    </div>
+    <div className="bg-blue-900 text-[16px] md:text-[20px]  text-yellow-400 text-center py-2 font-bold rounded">
+          MOVE-IN READY
+        </div>
 
     <h1 className="text-3xl md:text-4xl font-bold text-center mt-4">
       Premium Commercial Spaces{" "}
