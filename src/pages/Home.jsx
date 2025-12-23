@@ -8,7 +8,8 @@ import gallary5 from "../image/homeImg/gallary5.jpg";
 import gallary6 from "../image/homeImg/gallary6.jpg";
 
 // import h1 from "../image/homeImg/h1.jpg";
-import hero from "../image/homeImg/hero.jpg";
+import hero from "../image/homeImg/hero.jpeg";
+import specialOffer from "../image/homeImg/specialOffer.png";
 import floor2 from "../image/homeImg/floor2.jpg";
 import floor3 from "../image/homeImg/floor3.jpg";
 import floor4 from "../image/homeImg/floor4.jpg";
@@ -96,6 +97,13 @@ const Home = () => {
               backgroundPosition: "center",
             }}
           >
+            <div className="hidden md:flex">
+              <img className=" absolute w-80 h-60  top-0 right-[-5px]" src={specialOffer} alt="" />
+            </div>
+
+             <div className="md:hidden">
+              <img className=" absolute w-40 h-20  top-20 right-0 " src={specialOffer} alt="" />
+            </div>
             {/* DESKTOP ABSOLUTE CONTENT */}
             <div
               className="
@@ -107,6 +115,7 @@ const Home = () => {
             >
               <Content setOpenForm={setOpenForm} />
             </div>
+            
           </div>
 
           {/* ---------------- MOBILE CONTENT (NOT ABSOLUTE) ---------------- */}
