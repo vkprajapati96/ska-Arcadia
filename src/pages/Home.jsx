@@ -110,7 +110,7 @@ const Home = () => {
               hidden md:block
               absolute top-1/2 left-5 -translate-y-1/2 
               w-[60%]
-              bg-white p-8 rounded-lg shadow-xl
+              bg-gray-300 p-8 rounded-lg shadow-xl
             "
             >
               <Content setOpenForm={setOpenForm} />
@@ -119,7 +119,7 @@ const Home = () => {
           </div>
 
           {/* ---------------- MOBILE CONTENT (NOT ABSOLUTE) ---------------- */}
-          <div className="block md:hidden order-2 px-5 bg-white p-6 rounded-lg shadow-xl">
+          <div className="block md:hidden order-2 px-5 bg-gray-200 p-6 rounded-lg">
             <Content setOpenForm={setOpenForm} />
           </div>
 
