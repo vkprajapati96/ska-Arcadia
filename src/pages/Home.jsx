@@ -10,6 +10,7 @@ import gallary6 from "../image/homeImg/gallary6.jpg";
 // import h1 from "../image/homeImg/h1.jpg";
 import hero from "../image/homeImg/hero.jpeg";
 import specialOffer from "../image/homeImg/specialOffer.png";
+import specialOfferForMobile from "../image/homeImg/specialOfferForMobile.png";
 import floor2 from "../image/homeImg/floor2.jpg";
 import floor3 from "../image/homeImg/floor3.jpg";
 import floor4 from "../image/homeImg/floor4.jpg";
@@ -88,6 +89,7 @@ const Home = () => {
       {/* part 1 */}
       <div className="w-full bg-gray-100  md:pt-20">
         <div className="mx-auto grid grid-cols-1 md:grid-cols-[70%_30%]">
+          
           {/* ---------------- IMAGE SECTION ---------------- */}
           <div
             className="relative w-full h-[300px] md:h-[750px] overflow-hidden shadow-lg order-1"
@@ -98,11 +100,11 @@ const Home = () => {
             }}
           >
             <div className="hidden md:flex">
-              <img className=" absolute w-80 h-60  top-0 right-[-5px]" src={specialOffer} alt="" />
+              <img className=" absolute  md:w-40 md:h-35 lg:w-80 lg:h-60  top-0 right-[-5px]" src={specialOffer} alt="" />
             </div>
 
              <div className="md:hidden">
-              <img className=" absolute w-40 h-20  top-20 right-0 " src={specialOffer} alt="" />
+              <img className=" absolute w-72 h-45  top-20 right-0 " src={specialOfferForMobile} alt="" />
             </div>
             {/* DESKTOP ABSOLUTE CONTENT */}
             <div
