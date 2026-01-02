@@ -89,7 +89,6 @@ const Home = () => {
       {/* part 1 */}
       <div className="w-full bg-gray-100  md:pt-20">
         <div className="mx-auto grid grid-cols-1 md:grid-cols-[70%_30%]">
-          
           {/* ---------------- IMAGE SECTION ---------------- */}
           <div
             className="relative w-full h-[300px] md:h-[750px] overflow-hidden shadow-lg order-1"
@@ -100,11 +99,19 @@ const Home = () => {
             }}
           >
             <div className="hidden md:flex">
-              <img className=" absolute  md:w-40 md:h-35 lg:w-80 lg:h-60  top-0 right-[-5px]" src={specialOffer} alt="" />
+              <img
+                className=" absolute  md:w-40 md:h-35 lg:w-80 lg:h-60  top-0 right-[-5px]"
+                src={specialOffer}
+                alt=""
+              />
             </div>
 
-             <div className="md:hidden">
-              <img className=" absolute w-72 h-45  top-20 right-0 " src={specialOfferForMobile} alt="" />
+            <div className="md:hidden">
+              <img
+                className=" absolute w-72 h-45  top-20 right-0 "
+                src={specialOfferForMobile}
+                alt=""
+              />
             </div>
             {/* DESKTOP ABSOLUTE CONTENT */}
             <div
@@ -117,7 +124,6 @@ const Home = () => {
             >
               <Content setOpenForm={setOpenForm} />
             </div>
-            
           </div>
 
           {/* ---------------- MOBILE CONTENT (NOT ABSOLUTE) ---------------- */}
@@ -152,12 +158,21 @@ const Home = () => {
 
           {/* RIGHT CONTENT */}
           <div className="w-full">
-            <h2 className="text-[18px] font-semibold mt-2 text-[#0d1a3a] tracking-wide">
-              Where Your Business Finds Its Perfect Space
+            <h2 className="text-[22px] font-semibold mt-2 text-[#0d1a3a] tracking-wide">
+              High-Return Commercial Spaces
             </h2>
 
-            <p className="text-gray-700 mt-5 leading-7 text-[16px]">
-SKA ARCADIA is a RERA - Approved premium commercial project offering modern, move-in-ready retail and office spaces designed for business growth and steady returns. With excellent location, strong connectivity, and quality construction, it provides the right environment for brands and investors - enhanced by the Double Rental, Double Dhamaka Offer featuring 2 years assured rental post possession, 2 years FREE maintenance, and an easy 40:60 payment plan, making it a simple and smart commercial investment choice.
+            <p className="text-gray-700 mt-5 leading-7 text-[15px]">
+              SKA ARCADIA is a <strong>RERA</strong> - Approved premium
+              commercial project offering modern, <strong>move-in-ready</strong>{" "}
+              retail and office spaces designed for business growth and steady
+              returns. With excellent location, strong connectivity, and quality
+              construction, it provides the right environment for brands and
+              investors - enhanced by the&nbsp;
+              <strong>Double Rental, Double Dhamaka Offer</strong> featuring 2
+              years assured rental post possession, 2 years FREE maintenance,
+              and an <strong>easy 40:60 payment plan</strong> , making it a
+              simple and smart commercial investment choice.
             </p>
 
             <button
@@ -350,30 +365,28 @@ SKA ARCADIA is a RERA - Approved premium commercial project offering modern, mov
       </div>
 
       {/* POPUP FORM OVERLAY */}
-{/* POPUP FORM OVERLAY */}
-{openForm && (
-  <div className="fixed inset-0 bg-black/40 flex justify-center items-start z-50">
-
-    {/* FORM BOX */}
-    <div
-      className="relative bg-white w-full max-w-md rounded-lg shadow-[0px] p-6 mt-10 
+      {/* POPUP FORM OVERLAY */}
+      {openForm && (
+        <div className="fixed inset-0 bg-black/40 flex justify-center items-start z-50">
+          {/* FORM BOX */}
+          <div
+            className="relative bg-white w-full max-w-md rounded-lg shadow-[0px] p-6 mt-10 
       animate-[slideDown_0.4s_ease-out]"
-    >
-      {/* Close Button */}
-      <button
-        onClick={() => setOpenForm(false)}
-        className="absolute top-0 right-1 cursor-pointer px-4 py-1 text-end 
+          >
+            {/* Close Button */}
+            <button
+              onClick={() => setOpenForm(false)}
+              className="absolute top-0 right-1 cursor-pointer px-4 py-1 text-end 
         text-black hover:text-red-600 text-[24px] font-semibold"
-      >
-        x
-      </button>
+            >
+              x
+            </button>
 
-      {/* IMPORT CONTACT FORM HERE */}
-      <Contact />
-    </div>
-  </div>
-)}
-
+            {/* IMPORT CONTACT FORM HERE */}
+            <Contact />
+          </div>
+        </div>
+      )}
 
       {/* Tailwind Custom Animation */}
       <style>
@@ -425,7 +438,6 @@ SKA ARCADIA is a RERA - Approved premium commercial project offering modern, mov
 
           {/* RIGHT FORM BOX EXACT SAME LOOK */}
           <div className="w-full md:w-[35%] bg-[#f8fafc] ">
-
             <Contact />
           </div>
         </div>
@@ -439,8 +451,8 @@ SKA ARCADIA is a RERA - Approved premium commercial project offering modern, mov
 const Content = ({ setOpenForm }) => (
   <>
     <div className="bg-blue-900 text-[16px] md:text-[20px]  text-yellow-400 text-center py-2 font-bold rounded">
-          MOVE-IN READY
-        </div>
+      MOVE-IN READY
+    </div>
 
     <h1 className="text-3xl md:text-4xl font-bold text-center mt-4">
       Premium Commercial Spaces{" "}
@@ -477,16 +489,14 @@ const Content = ({ setOpenForm }) => (
     </div>
     <div className="text-center mb-4 flex justify-around  text-[16px]">
       <p className="flex items-center gap-2">
-        <GoDotFill size={15} className="text-[10px]" />
-        2 Years Rental post Possession 
+        <GoDotFill size={15} className="text-[10px]" />2 Years Rental post
+        Possession
       </p>
 
       <p className="flex items-center gap-2">
-        <GoDotFill size={15} className="text-[10px]" />
-        2 Years Free Maintenance 
+        <GoDotFill size={15} className="text-[10px]" />2 Years Free Maintenance
       </p>
     </div>
-
 
     <div className="border border-blue-800 bg-blue-900 text-white text-center py-2 mt-6 rounded">
       <p className="font-semibold text-lg">Contact Now +91 836 860 4905</p>
